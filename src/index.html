@@ -2,17 +2,12 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="/src/styles/developer.scss">
   <link rel="stylesheet" href="/src/styles/usefulness.scss">
   <link rel="stylesheet" href="/src/styles/contact.scss">
   <link rel="stylesheet" href="/src/styles/variables.scss">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
   <title>Krainet</title>
 </head>
 <body>
@@ -27,7 +22,7 @@
       </span>
     </div>
     <div class="developer-wrapper">
-      <p class="developer-wrapper__name"><span class="developer-wrapper__circle"></span>Меня зовут Александра Смит</p>
+      <p class="developer-wrapper__name"><span class="developer-wrapper__name_circle"></span>Меня зовут Александра Смит</p>
       <p class="developer-wrapper__city">Я web-разработчик из города Москва</p>
       <div class="developer-wrapper-button">
         <button class="developer-wrapper-button__portfolio">Портфолио</button>
@@ -41,16 +36,16 @@
     <div class="developer-burger-sidebar">
       <img  class="developer-burger-sidebar__close" src="/src/images/Close.svg" alt="закрыть меню">
       <ul class="developer-burger-list">
-        <li class="developer-burger-list_item">Про меня</li>
-        <li class="developer-burger-list_item">Мой опыт</li>
-        <li class="developer-burger-list_item">Мои навыки</li>
-        <li class="developer-burger-list_item">Мои работы</li>
-        <li class="developer-burger-list_item">прайс-лист</li>
-        <li class="developer-burger-list_item">контакты</li>
+        <li class="developer-burger-list_item developer-burger-list_item_before">Про меня</li>
+        <li class="developer-burger-list_item developer-burger-list_item_before">Мой опыт</li>
+        <li class="developer-burger-list_item developer-burger-list_item_before">Мои навыки</li>
+        <li class="developer-burger-list_item developer-burger-list_item_before">Мои работы</li>
+        <li class="developer-burger-list_item developer-burger-list_item_before">прайс-лист</li>
+        <li class="developer-burger-list_item developer-burger-list_item_before">контакты</li>
       </ul>
     
       <div class="developer-burger-socials">
-        <img class="developer-burger-social__icon" src="/src/images/Github.svg"> >
+        <img class="developer-burger-social__icon" src="/src/images/Github.svg"> 
         <img class="developer-burger-social__icon" src="/src/images/Instagram.svg"></a>
         <img class="developer-burger-social__icon" src="/src/images/Facebook.svg"></a>
       </div>
@@ -60,74 +55,102 @@
 
   <section class="usefulness">
     <div class="usefulness-title">
-      <h3 class="usefulness-title__experience">Опыт</h3>
+      <p class="usefulness-title__experience">
+        <span class="usefulness-title__experience_circle"></span>Опыт
+      </p>
       <h2 class="usefulness-title__topic">Чем я буду полезна</h2>
       <div class="usefulness-title-line"></div>
     </div>
+
     <div class="usefulness-basic">
+
       <div class="usefulness-basic-education">
+        <span class="usefulness-basic-education__small-circle"></span>
         <h3 class="usefulness-basic-education__title">Образование</h3>
         <div class="usefulness-basic-education-wrapper">
+          <div class="usefulness-basic-education-wrapper__line"></div>
           <img class="usefulness-basic-education-wrapper__img"  src="/src/images/University.svg" >
+          <span class="usefulness-basic-education-wrapper__circle"></span>
           <div class="usefulness-basic-education-wrapper-info">
-            <h3 class="usefulness-basic-education-wrapper__topic">МГТУ им. Н. Э. Баумана</h3>
-            <h3 class="usefulness-basic-education-wrapper__addition">Диплом магистра | Москва (2014-2020)</h3>
+            <p class="usefulness-basic-education-wrapper-info__topic">МГТУ им. Н. Э. Баумана</p>
+            <p class="usefulness-basic-education-wrapper-info__addition">Диплом магистра | Москва (2014-2020)</p>
           </div>
           <h4 class="usefulness-basic-education-wrapper__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmo.</h4>
         </div>
         <div class="usefulness-basic-education-wrapper">
+          <div class="usefulness-basic-education-wrapper__line"></div>
           <img class="usefulness-basic-education-wrapper__img"  src="/src/images/Courses.svg">
+          <span class="usefulness-basic-education-wrapper__circle"></span>
           <div class="usefulness-basic-education-wrapper-info">
-            <h3 class="usefulness-basic-education-wrapper__topic">Udemy</h3>
-            <h3 class="usefulness-basic-education-wrapper__addition">Курсы по Web-разработке</h3>
+            <h3 class="usefulness-basic-education-wrapper-info__topic">Udemy</h3>
+            <p class="usefulness-basic-education-wrapper-info__addition">Курсы по Web-разработке</p>
           </div>
           <h4 class="usefulness-basic-education-wrapper__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmo.</h4>
         </div>
       </div>
       <div class="usefulness-basic-experience">
+        <span class="usefulness-basic-experience__small-circle"></span>
         <h3 class="usefulness-basic-experience__title">Опыт работы</h3>
         <div class="usefulness-basic-experience-wrapper">
+          <div class="usefulness-basic-experience-wrapper__line"></div>
           <img class="usefulness-basic-experience-wrapper__img" src="/src/images/seo 1.svg">
+          <span class="usefulness-basic-experience-wrapper__circle"></span>
           <div class="usefulness-basic-experience-wrapper-info">
-            <h3 class="usefulness-basic-experience-wrapper__topic">Front-End Developer</h3>
-            <h3 class="usefulness-basic-experience-wrapper__addition">EPAM | Москва (2018-2019)</h3>
+            <h3 class="usefulness-basic-experience-wrapper-info__topic">Front-End Developer</h3>
+            <h3 class="usefulness-basic-experience-wrapper-info__addition">EPAM | Москва (2018-2019)</h3>
           </div>
-          <h4 class="usefulness-basic-experience-wrapper__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmo.</h4>
+          <h4 class="usefulness-basic-experience-wrapper__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmo.</h4>
         </div>
         <div class="usefulness-basic-experience-wrapper">
+          <div class="usefulness-basic-experience-wrapper__line"></div>
           <img class="usefulness-basic-experience-wrapper__img" src="/src/images/designer.svg">
+          <span class="usefulness-basic-experience-wrapper__circle"></span>
           <div class="usefulness-basic-experience-wrapper-info">
-            <h3 class="usefulness-basic-experience-wrapper__topic">UI/UX Designer</h3>
-            <h3 class="usefulness-basic-experience-wrapper__addition">Squad Team | Москва (2018)</h3>
+            <h3 class="usefulness-basic-experience-wrapper-info__topic">UI/UX Designer</h3>
+            <h3 class="usefulness-basic-experience-wrapper-info__addition">Squad Team | Москва (2018)</h3>
           </div>
-          <h4 class="usefulness-basic-experience-wrapper__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmo.</h4>
+          <h4 class="usefulness-basic-experience-wrapper__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmo.</h4>
         </div>
-      </div>      
+      </div>
     </div>
   </section>
 
   <section class="contact">
     <div class="contact-wrapper">
-      <img class="contact-wrapper__image" src="/src/images/Photo.svg">
+      <img class="contact-wrapper__image" src="/src/images/Photo.svg" alt="Контактное изображение">
       <div class="contact-wrapper-basic">
         <h4 class="contact-wrapper-basic__contacts">Контакты</h4>
+        <span class="contact-wrapper-basic__circle"></span>
         <h2 class="contact-wrapper-basic__info">Свяжитесь со мной</h2>
         <div class="contact-wrapper-basic__line"></div>
         <h4 class="contact-wrapper-basic__additional">Любым удобным для вас способом:</h4>
         <span class="contact-wrapper-basic-social">
-          <img class="contact-wrapper-basic-social__icon" src="/src/images/Facebook.svg">
-          <img class="contact-wrapper-basic-social__icon" src="/src/images/Telegram.svg">
-          <img class="contact-wrapper-basic-social__icon" src="/src/images/Instagram.svg">
+          <img class="contact-wrapper-basic-social__icon" src="/src/images/Facebook2.svg" alt="Facebook">
+          <img class="contact-wrapper-basic-social__icon" src="/src/images/Telegram.svg" alt="Telegram">
+          <img class="contact-wrapper-basic-social__icon" src="/src/images/Instagram2.svg" alt="Instagram">
         </span>
-        <h4 class="contact-wrapper-basic__text">Или оставьте ваши данные и я сама вам напишу:</h4> 
-        <form class="contact-wrapper-basic-input">
-          <input class="contact-wrapper-basic-input__name" type="text" name="Ваше имя">
-          <input class="contact-wrapper-basic-input__mail" type="email" name="Ваша почта">
+        <h4 class="contact-wrapper-basic__text">Или оставьте ваши данные, и я сама вам напишу:</h4>
+        <form id="contactForm" class="contact-wrapper-basic-input">
+          <div class="contact-wrapper-basic-input-name">
+            <p class="contact-wrapper-basic-input-name__text">Ваше имя</p>
+            <input id="nameInput" class="contact-wrapper-basic-input-name__add" type="text" name="Ваше имя"/>
+            <small class="contact-wrapper-basic-input-name__validation" id="nameError"></small>
+          </div>
+          <div class="contact-wrapper-basic-input-mail">
+            <p class="contact-wrapper-basic-input-mail__text">Ваша почта</p>
+            <input id="emailInput" class="contact-wrapper-basic-input-mail__add" type="email" name="Ваша почта"/>
+            <small class="contact-wrapper-basic-input-mail__validation" id="emailError"></small>
+          </div>
+          <div class="contact-wrapper-basic-input-message">
+            <p class="contact-wrapper-basic-input-message__text">Ваше сообщение</p>
+            <textarea id="messageInput" class="contact-wrapper-basic-input-message__add" name="Ваше сообщение" maxlength="500" rows="4" cols="50"></textarea>
+            <small class="contact-wrapper-basic-input-message__validation" id="messageError"></small>
+          </div>
+          <button class="contact-wrapper-basic-input__send" type="submit">Отправить сообщение</button>
         </form>
-        <input class="contact-wrapper-basic__message" type="text" name="Ваше Сообщение" >
-        <button class="contact-wrapper-basic__send">Отправить сообщение</button>
       </div>
     </div>
   </section>
+  <script src="/src/js/script.js"></script>
 </body>
 </html>

@@ -3,10 +3,8 @@ $width-wrapper:1140px;
 @mixin circle {
   width: 36px;
   height: 36px;
-  top: -72px;
-  left: 20px;
   gap: 0px;
-  opacity: 0;
+  opacity: 1;
   background-color: #FFA501;
   border-radius: 50%;  
 }
@@ -14,8 +12,6 @@ $width-wrapper:1140px;
 @mixin small-circle {
   width: 15px;
   height: 15px;
-  top: 1558px;
-  left: 85px;
   gap: 0px;
   opacity: 1;
   background-color: #FFA501;

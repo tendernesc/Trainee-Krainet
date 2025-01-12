@@ -1,5 +1,240 @@
 @import 'variables.scss';
 
-.usefulness{
-  margin-top: 200px;
+.usefulness {
+  width: $width-wrapper;
+  margin: 0 auto;
+  margin-top: 120px;
+
+  .usefulness-title {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+
+    .usefulness-title__experience {
+      font-family: 'Poppins', sans-serif;
+      font-size: 16px;
+      font-weight: 700;
+      line-height: 24px;
+      position: relative; 
+
+      .usefulness-title__experience_circle {
+        @include circle;
+        position: absolute;
+        top: 50%; 
+        left: 552px; 
+        transform: translateY(-50%); 
+        background-color: #FFA501; 
+        z-index: -1; 
+      }
+    }
+
+    .usefulness-title__topic{
+      font-family: 'Poppins',sans-serif;
+      font-size: 36px;
+      font-weight: 700;
+      line-height: 60px;
+      height: 60px;
+      margin-bottom: 25px;
+    }
+
+    .usefulness-title-line {
+      width: 60px;                
+      height: 0;                 
+      border-top: 3px solid #FFA501; 
+      margin: 10px auto;          
+    }
+  }
+
+  .usefulness-basic{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-top: 60px;
+
+    .usefulness-basic-education{
+      display: flex;
+      flex-direction: column;
+      width: 425px;
+      height: 343px;
+      border-left: 1px solid black;
+      position: relative;
+
+      .usefulness-basic-education__small-circle {
+        @include small-circle;
+        margin-right: 10px; 
+        left: -8px;
+        top:-6px;
+        position: absolute;
+      }
+
+      .usefulness-basic-education__title{
+        font-family: 'Poppins',sans-serif;
+        font-size: 20px;
+        font-weight: 700;
+        margin-left: 43px;
+        margin-top: -10px;
+      }
+
+      .usefulness-basic-education-wrapper{
+        display: flex;
+        align-items: center; 
+        margin-top: 45px;
+        position: relative; 
+        width: 375px;
+        height: 130px;
+        margin-left: 43px;
+        margin-bottom: -10px;
+
+        .usefulness-basic-education-wrapper__line {
+          width: 42px;
+          height: 1px;
+          border-top: 1px solid #000000;
+          transform: rotate(-180deg); 
+          position: absolute;
+          top:18px;
+          left: -43px;
+        }
+        
+
+        .usefulness-basic-education-wrapper__img{
+          width: 25px; 
+          height: 25px; 
+          margin-top: -76px; 
+          margin-left: 14px;
+        }
+
+        .usefulness-basic-education-wrapper__circle {
+          @include circle;
+          position: absolute;
+          left: -1px; 
+          top: 18px;
+          transform: translateY(-50%);
+          z-index: -1; 
+
+        }
+
+        .usefulness-basic-education-wrapper-info{
+          position: absolute; 
+          left: 50px; 
+          top: 0; 
+          display: flex;
+          flex-direction: column;
+
+          .usefulness-basic-education-wrapper-info__topic{
+            font-family: 'Poppins', sans-serif;
+            font-size: 14px;
+            font-weight: 700;
+          }
+
+          .sefulness-basic-education-wrapper-info__addition{
+            font-family: 'Poppins',sans-serif;
+            font-size: 12px;
+            font-weight: 500;
+          }
+        }
+
+        .usefulness-basic-education-wrapper__text {
+          width: 375px;
+          font-family: 'Poppins', sans-serif;
+          font-size: 12px;
+          font-weight: 500;
+          padding-top: 44px;
+          margin-left: -34px;
+          margin-bottom: -16px;
+        }
+      }
+    }
+
+    .usefulness-basic-experience {
+      display: flex;
+      flex-direction: column;
+      width: 425px;
+      height: 343px;
+      border-left: 1px solid black;
+      position: relative;
+  
+      .usefulness-basic-experience__small-circle {
+        @include small-circle;
+        margin-right: 10px; 
+        left: -8px;
+        top: -6px;
+        position: absolute;
+      }
+  
+      .usefulness-basic-experience__title {
+        font-family: 'Poppins', sans-serif;
+        font-size: 20px;
+        font-weight: 700;
+        margin-left: 43px;
+        margin-top: -10px;
+      }
+  
+      .usefulness-basic-experience-wrapper {
+        display: flex;
+        align-items: center; 
+        margin-top: 45px;
+        position: relative; 
+        width: 375px;
+        height: 130px;
+        margin-left: 43px;
+        margin-bottom: -10px;
+  
+        .usefulness-basic-experience-wrapper__line {
+          width: 42px;
+          height: 1px;
+          border-top: 1px solid #000000;
+          transform: rotate(-180deg); 
+          position: absolute;
+          top: 18px;
+          left: -43px;
+        }
+  
+        .usefulness-basic-experience-wrapper__img {
+          width: 25px; 
+          height: 25px; 
+          margin-top: -76px; 
+          margin-left: 14px;
+        }
+  
+        .usefulness-basic-experience-wrapper__circle {
+          @include circle;
+          position: absolute;
+          left: -1px; 
+          top: 18px;
+          transform: translateY(-50%);
+          z-index: -1; 
+        }
+  
+        .usefulness-basic-experience-wrapper-info {
+          position: absolute; 
+          left: 50px; 
+          top: 0; 
+          display: flex;
+          flex-direction: column;
+  
+          .usefulness-basic-experience-wrapper-info__topic {
+            font-family: 'Poppins', sans-serif;
+            font-size: 14px;
+            font-weight: 700;
+          }
+  
+          .usefulness-basic-experience-wrapper-info__addition {
+            font-family: 'Poppins', sans-serif;
+            font-size: 12px;
+            font-weight: 500;
+          }
+        }
+  
+        .usefulness-basic-experience-wrapper__text {
+          width: 375px;
+          font-family: 'Poppins', sans-serif;
+          font-size: 12px;
+          font-weight: 500;
+          padding-top: 44px;
+          margin-left: -34px;
+          margin-bottom: -16px;
+        }
+      }
+    }
+  }
 }
