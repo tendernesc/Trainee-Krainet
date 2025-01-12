@@ -16,9 +16,15 @@
     <div class="developer-social">
       <p class="developer-social__text">Социальные сети</p>
       <span class="developer-social-icon">
-        <img class="developer-social-icon__item" src="/src/images/Github.svg">
-        <img class="developer-social-icon__item" src="/src/images/Instagram.svg">
-        <img class="developer-social-icon__item" src="/src/images/Facebook.svg">
+        <a class="developer-social-icon-link" href="https://github.com" target="_blank">
+          <img class="developer-social-icon-link__item" src="/src/images/Github.svg" alt="GitHub">
+        </a>
+        <a class="developer-social-icon-link" href="https://instagram.com" target="_blank">
+          <img class="developer-social-icon-link__item" src="/src/images/Instagram.svg" alt="Instagram">
+        </a>
+        <a class="developer-social-icon-link" href="https://facebook.com" target="_blank">
+          <img class="developer-social-icon-link__item" src="/src/images/Facebook.svg" alt="Facebook">
+        </a>
       </span>
     </div>
     <div class="developer-wrapper">
@@ -30,9 +36,9 @@
       </div>
     </div>
     <div class="developer-burger">
-      <img class="developer-burger-menu" src="/src/images/Hamburger.svg" alt="Открыть меню">
+      <img class="developer-burger-menu developer-burger-menu_hover" src="/src/images/Hamburger.svg" alt="Открыть меню">
     </div>
-
+    <div class="developer-burger-overlay"></div>
     <div class="developer-burger-sidebar">
       <img  class="developer-burger-sidebar__close" src="/src/images/Close.svg" alt="закрыть меню">
       <ul class="developer-burger-list">
@@ -45,15 +51,21 @@
       </ul>
     
       <div class="developer-burger-socials">
-        <img class="developer-burger-social__icon" src="/src/images/Github.svg"> 
-        <img class="developer-burger-social__icon" src="/src/images/Instagram.svg"></a>
-        <img class="developer-burger-social__icon" src="/src/images/Facebook.svg"></a>
+        <a class="developer-burger-socials-link__icon" href="https://github.com" target="_blank">
+          <img class="developer-burger-social-link__icon" src="/src/images/Github.svg" alt="GitHub">
+        </a>
+        <a class="developer-burger-socials-link__icon" href="https://instagram.com" target="_blank">
+          <img class="developer-burger-social-link__icon" src="/src/images/Instagram.svg" alt="Instagram">
+        </a>
+        <a class="developer-burger-socials-link__icon" href="https://facebook.com" target="_blank">
+          <img class="developer-burger-social-link__icon" src="/src/images/Facebook.svg" alt="Facebook">
+        </a>
       </div>
     </div>
   </section>
 
 
-  <section class="usefulness">
+  <section class="usefulness" id="usefulnessSection">
     <div class="usefulness-title">
       <p class="usefulness-title__experience">
         <span class="usefulness-title__experience_circle"></span>Опыт
@@ -61,9 +73,7 @@
       <h2 class="usefulness-title__topic">Чем я буду полезна</h2>
       <div class="usefulness-title-line"></div>
     </div>
-
     <div class="usefulness-basic">
-
       <div class="usefulness-basic-education">
         <span class="usefulness-basic-education__small-circle"></span>
         <h3 class="usefulness-basic-education__title">Образование</h3>
@@ -115,7 +125,7 @@
     </div>
   </section>
 
-  <section class="contact">
+  <section class="contact" id="contactSection">
     <div class="contact-wrapper">
       <img class="contact-wrapper__image" src="/src/images/Photo.svg" alt="Контактное изображение">
       <div class="contact-wrapper-basic">
@@ -125,10 +135,16 @@
         <div class="contact-wrapper-basic__line"></div>
         <h4 class="contact-wrapper-basic__additional">Любым удобным для вас способом:</h4>
         <span class="contact-wrapper-basic-social">
-          <img class="contact-wrapper-basic-social__icon" src="/src/images/Facebook2.svg" alt="Facebook">
-          <img class="contact-wrapper-basic-social__icon" src="/src/images/Telegram.svg" alt="Telegram">
-          <img class="contact-wrapper-basic-social__icon" src="/src/images/Instagram2.svg" alt="Instagram">
-        </span>
+          <a href="https://facebook.com" target="_blank" class="contact-wrapper-basic-social-link">
+            <img class="contact-wrapper-basic-social-link__icon" src="/src/images/Facebook2.svg" alt="Facebook">
+          </a>
+          <a href="https://telegram.org" target="_blank" class="contact-wrapper-basic-social-link">
+            <img class="contact-wrapper-basic-social-link__icon" src="/src/images/Telegram.svg" alt="Telegram">
+          </a>
+          <a href="https://instagram.com" target="_blank" class="contact-wrapper-basic-social-link">
+            <img class="contact-wrapper-basic-social-link__icon" src="/src/images/Instagram2.svg" alt="Instagram">
+          </a>
+        </span>        
         <h4 class="contact-wrapper-basic__text">Или оставьте ваши данные, и я сама вам напишу:</h4>
         <form id="contactForm" class="contact-wrapper-basic-input">
           <div class="contact-wrapper-basic-input-name">
@@ -151,6 +167,7 @@
       </div>
     </div>
   </section>
+  
   <script src="/src/js/script.js"></script>
 </body>
 </html>

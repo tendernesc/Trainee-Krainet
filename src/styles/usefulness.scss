@@ -4,6 +4,8 @@
   width: $width-wrapper;
   margin: 0 auto;
   margin-top: 120px;
+  position: relative;
+  z-index: -1;
 
   .usefulness-title {
     display: flex;
@@ -236,5 +238,61 @@
         }
       }
     }
+  }
+}
+
+@media (max-width: 1160px){
+  .usefulness {
+    width: 90%;
+  }
+
+  .usefulness-title__experience_circle{
+    display: none;
+  }
+
+  .usefulness-basic{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: 60px;
+  }
+}
+
+@media (max-width: 968px){
+  .usefulness-basic-education{
+    margin-bottom: 100px;
+  }
+}
+
+@media (max-width: 454px){
+  .usefulness-basic-experience-wrapper__text{
+    width: 250px !important;
+  }
+
+  .usefulness-basic-experience-wrapper{
+    width: 220px !important;
+  }
+
+  .usefulness-basic-education-wrapper__text{
+    margin-top: 25px !important;
+  }
+  .usefulness-basic-experience-wrapper__text{
+    margin-top: 15px !important;
+  }
+
+  .usefulness-basic-education-wrapper__text{
+    width: 250px !important;
+  }
+
+  .usefulness-basic-education-wrapper{
+    width: 270px !important;
+  }
+
+  .usefulness-title{
+    align-items: center;
+  }
+
+  .usefulness-title__topic{
+    font-size: 20px !important;
   }
 }

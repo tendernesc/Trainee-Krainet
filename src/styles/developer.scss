@@ -42,10 +42,14 @@
     .developer-social-icon{
       margin: 5px 0 0 15px;
 
-      .developer-social-icon__item{
-        transform: rotate(90deg);
-        margin-right: 10px;
-        cursor: pointer;
+      .developer-social-icon-link{
+        text-decoration: none;
+        
+        .developer-social-icon-link__item{
+          transform: rotate(90deg);
+          margin-right: 10px;
+          cursor: pointer;
+        }
       }
     }
   }
@@ -109,6 +113,7 @@
         border: 1px solid #FFA501;
         font-weight: 700;
         font-size: 14px;
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); 
       }
 
       .developer-wrapper-button__aboutme{
@@ -130,10 +135,34 @@
     right: 30px;     
     z-index: 1000; 
     cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
     
     .developer-burger-menu {
       width: auto;      
       height: auto;     
+    }
+
+    .developer-burger-menu_hover:hover{
+      transform: rotate(180deg); 
+
+    }
+  }
+
+  .developer-burger-overlay{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(255, 255, 255, 0.7); 
+    z-index: 999; 
+    opacity: 0; 
+    visibility: hidden; 
+    transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
+
+    &.overlay-visible {
+      opacity: 1;
+      visibility: visible;
     }
   }
 
@@ -141,12 +170,18 @@
     background-color: #FFA501;
     width: 30vw;
     height: 100vh;
-    position: absolute;
-    overflow: 1;
-    z-index: 1;
-    top:0px;
-    display: none;
-    
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    transform: translateX(-290%); 
+    transition: transform 0.3s ease-in-out;
+
+
+    &.sidebar-show {
+      transform: translateX(0%);
+      transition: transform 0.3s ease-in-out;
+    }
 
     .developer-burger-sidebar__close{
       position: absolute;
@@ -171,6 +206,7 @@
         position: relative;
         padding-left: 30px; 
         padding-bottom: 15px;
+        cursor: pointer;
       }
 
       .developer-burger-list_item_before::before{
@@ -193,7 +229,7 @@
       position: relative;
 
 
-      .developer-burger-social__icon{
+      .developer-burger-social-link__icon{
         transform: rotate(90deg);
         width: 20px;
         height: 20px;
@@ -206,4 +242,72 @@
   }
 }
 
+
+@media (max-width: 1310px){
+  .developer-social {
+    display: none !important;
+  }
+}
+
+@media (max-width: 1160px){
+  .developer-wrapper{
+    width: 90% !important;
+  }
+}
+
+@media (max-width: 1160px){
+  .developer-burger-list_item{
+    font-size: 20px !important;
+  }
+}
+
+@media (max-width: 980px){
+  .developer-burger-list{
+    margin-left: 30px !important;
+  } 
+
+  .developer-burger-list_item{
+    font-size: 14px !important;
+    padding-top:6px !important;
+  }
+
+  .developer-burger-social-link__icon{
+    margin-top: 100px !important;
+  }
+}
+
+@media (max-width: 700px){
+
+  .developer-burger-sidebar{
+    background-color: #FFA501;
+    width: 70vw !important;
+    height: 100vh;
+  }
+  .developer-burger-list{
+    margin-left: 30px !important;
+  } 
+
+  .developer-burger-list_item{
+    font-size: 20px !important;
+    padding-top:0px !important;
+  }
+}
+
+@media (max-width: 520px){
+  .developer-wrapper__city{
+    width: 280px !important;
+    height: 129px !important;
+    font-size: 28px !important;
+  }
+
+  .developer-wrapper-button__portfolio{
+    width: 120px;
+    font-size: 12px;
+  }
+
+  .developer-wrapper-button__aboutme{
+    width: 120px;
+    font-size: 12px;
+  }
+}
 
